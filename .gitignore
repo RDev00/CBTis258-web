@@ -1,0 +1,14 @@
+#IDEs documents
+.vscode/
+.vscode*
+
+#builds
+build/
+
+#dev
+.env
+.env.local
+
+#node
+node_modules/
+node_modules/*

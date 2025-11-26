@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "type": "module",
+  "version": "indev.1.0",
+  "description": "Esta pagina busca mejorar las fallas de la pagina del cbtis, incluyendo tambien nuevas funciones que haran la pagina destacar.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RDev00/CBTis258-web.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "RDev00",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RDev00/CBTis258-web/issues"
+  },
+  "homepage": "https://github.com/RDev00/CBTis258-web#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "2.86.0",
+    "bcrypt": "6.0.0",
+    "cors": "2.8.5",
+    "dotenv": "17.2.3",
+    "express": "5.1.0",
+    "jsonwebtoken": "9.0.2",
+    "multer": "2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.11"
+  }
+}
