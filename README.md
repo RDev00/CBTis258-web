@@ -1,2 +1,13 @@
 # CBTis258-web
-La actualizacion de la pagina web del CBTis 258
+
+## Descripcion
+Esta pagina busca mejorar las fallas de la pagina del cbtis, incluyendo tambien nuevas funciones que haran la pagina destacar.
+
+## Frameworks
+TailwindCSS
+Astro
+
+## Lenguajes
+JavaScript
+HTML
+TypeScript
