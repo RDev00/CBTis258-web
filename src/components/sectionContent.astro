@@ -1,0 +1,16 @@
+---
+export interface Props {
+	title?: String
+};
+
+const { title = "" } = Astro.props;
+---
+
+<section class="flex flex-col justify-center items-start w-[90%] mb-10">
+	<h1 class="text-start text-3xl md:text-7xl text-[#9D2449] font-bold h-full flex gap-3">
+		<span class="block h-full w-2 bg-[#B38E5D]"></span>
+		{title}
+	</h1>
+
+	<slot />
+</section>

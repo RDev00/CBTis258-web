@@ -1,16 +1,65 @@
 ---
-
+import Layout from '../layouts/layout.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import SectionContent from '../components/sectionContent.astro';
+import Subtitle from '../components/subtitle.astro';
+import Text from '../components/text.astro';
+import Card from '../components/card.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Inicio">
+	<Header />
+	<main class="flex flex-col pb-20 justify-center items-center">
+		<section class="flex flex-col justify-center items-center px-2 py-6 gap-5 personalized-background bg-cover bg-center w-full">
+			<img src="https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258-logo.png" alt="logo" class="max-w-[75%]" />
+			<h1 class="text-white text-2xl md:text-5xl text-center font-bold"> UN MOTIVO DE ORGULLO </h1>
+		</section>
+
+		<section class="bg-[#621132] text-white text-center w-full mb-10 text-xl py-3">
+			CENTRO DE BACHILLERATO Industrial y de Servicios No. 258
+		</section>
+
+		<section class="flex flex-col lg:flex-row gap-5 justify-center items-center w-[90%] mb-10">
+			<div class="flex flex-col h-full">
+				<h1 class="text-3xl md:text-7xl text-[#9D2449] font-bold h-full flex gap-3">
+					<span class="block h-full w-2 bg-[#B38E5D]"></span>
+					CBTis258
+				</h1>
+				<Text>
+				Somos una institución de Nivel Medio Superior técnico, donde los alumnos cursan su bachillerato (preparatoria) y una carrera técnica. Si el egresado decide estudiar la Educación Superior, le permite el acceso a cualquier carrera de licenciatura o ingeniería.
+				</Text>
+			</div>
+			<video class="w-[30rem] max-w-[90%] border-4 border-black rounded-md" src="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Cbtis-258-Escobedo-Dgeti.webm" controls="true" controlslist="nodownload" playsinline=""></video>
+		</section>
+
+		<SectionContent title="Nosotros">
+			<Subtitle subtitle="Historia" /> 
+			<Text>
+				El plantel fue construido por el municipio — en su momento — de General Escobedo, Nuevo León, y empezó actividades el 1 de septiembre de 1993. En sus inicios atendía a 486 alumnos. Con el paso del tiempo, esa cifra ha crecido, conforme también se ha ampliado la oferta educativa. Las primeras especialidades incluían Técnico en Turismo, Técnico en Mecánica y Técnico en Computación. Actualmente, su oferta educativa abarca varias carreras técnicas: por ejemplo Contabilidad, Programación, Laboratorio clínico, Mecánica industrial, Preparación de alimentos y bebidas, Servicios de hospedaje, entre otras.
+			</Text>
+
+			<Subtitle subtitle="Mision" /> 
+			<Text>
+				Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de bachilleres y profesionales técnicos, con el fin de contribuir al desarrollo sustentable del país.
+			</Text>
+
+			<Subtitle subtitle="Vision" /> 
+			<Text>
+				Ser una institución de educación media superior certificada, orientada al aprendizaje y desarrollo de conocimientos tecnológicos y humanísticos.
+			</Text>
+		</SectionContent>
+
+		<SectionContent title="Oferta educativa">
+			<div class="pt-5 flex flex-wrap w-full justify-center items-center gap-10">
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Accounting-Photos-by-Mikhail-Nilov.jpg" text="Contabilidad"	/>
+				<Card sourceImage="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?cs=srgb&dl=pexels-tara-winstead-8386440.jpg&fm=jpg" text="IA"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Industrial-Mechanics-Chevanon.jpg" text="Mecanica Industrial"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Drinks-Meal-Table.jpg" text="Preparación de alimentos y bebidas"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Hotel-Service-Photos.jpg" text="Servicio de hospedaje"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Computer-Technician-Photo-by-Elias-Gamez.jpg" text="S.M.E.C"	/>
+			</div>
+		</SectionContent>
+	</main>
+	<Footer />
+</Layout>
