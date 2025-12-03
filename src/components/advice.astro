@@ -1,10 +1,32 @@
 ---
 export interface Props {
   username?: String,
+  usermail?: String,
   title?: String,
   content?: String,
   date?: Date
 }
 
-const { username = "", title= "", content = "" } = Astro.props;
+const {
+  username = "",
+  usermail = "", 
+  title= "",
+  content = "",
+  date = new Date()
+} = Astro.props;
 ---
+
+<section class="flex flex-col justify-center items-start bg-yellow-100 w-[80%] px-2 py-4 rounded-md">
+  <div class="flex gap-3 justify-center items-center">
+    <img src="/user.png" alt="user-icon" class="aspect-square h-10" />
+    <div>
+      <h3 class="font-bold"> {username} </h3>
+      <p class="text-black/60 text-sm"> {usermail} </p>
+    </div>
+  </div>
+
+  <h2 class="font-bold text-xl pt-2"> {title} </h2>
+  <p> {content} </p>
+  
+  <p class="text-black/60 text-sm">{date.getDate()} de {date.toLocaleString("es-ES", { month: "long" })} {date.getFullYear()}</p>
+</section>

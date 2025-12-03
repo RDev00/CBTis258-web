@@ -2,12 +2,78 @@
 import Layout from "../layouts/layout.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
+import Advice from "../components/advice.astro";
+
+const advices = [
+  {
+    id: 1,
+    username: "Jose Rafael Martinez Bocanegra",
+    usermail: "jose.martinez@cbtis258.edu.mx",
+    title: "Hola mundo",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat earum sapiente odit rerum facere velit.",
+    date: new Date("July 01, 2001 12:00:00")
+  },
+  {
+    id: 2,
+    username: "María Fernanda López",
+    usermail: "maria.lopez@example.com",
+    title: "Consejo para programadores",
+    content:
+      "No te preocupes por aprender todo a la vez. Avanza un día a la vez y prioriza entender los fundamentos.",
+    date: new Date("August 15, 2020 09:30:00")
+  },
+  {
+    id: 3,
+    username: "Carlos Hernández",
+    usermail: "carlos.hdz@example.com",
+    title: "Organiza tu tiempo",
+    content:
+      "La productividad mejora cuando divides tus tareas en bloques pequeños y manejables.",
+    date: new Date("December 02, 2022 17:45:00")
+  },
+  {
+    id: 4,
+    username: "Ana Sofía Ramírez",
+    usermail: "ana.ramirez@example.com",
+    title: "Aprende constantemente",
+    content:
+      "El mundo tecnológico cambia rápido. Dedica aunque sea 20 minutos diarios a aprender algo nuevo.",
+    date: new Date("March 10, 2019 14:10:00")
+  },
+  {
+    id: 5,
+    username: "Luis Alberto Torres",
+    usermail: "luis.torres@example.com",
+    title: "No tengas miedo a equivocarte",
+    content:
+      "Equivocarse no solo es normal, sino necesario. Cada error es una oportunidad para mejorar.",
+    date: new Date("January 07, 2023 07:50:00")
+  },
+  {
+    id: 6,
+    username: "Daniela Cruz",
+    usermail: "daniela.cruz@example.com",
+    title: "Colabora siempre",
+    content:
+      "Trabajar con otros te ayuda a ver soluciones que solo no encontrarías. El trabajo en equipo es clave.",
+    date: new Date("May 21, 2018 19:20:00")
+  }
+];
 ---
 
 <Layout>
   <Header />
-  <main class="flex flex-col py-10 justify-center items-center">
-    
+  <main class="flex flex-col py-10 justify-center items-center gap-5">
+    { advices.map(advice => (
+      <Advice
+      usermail={advice.usermail}
+      username={advice.username}
+      title={advice.title}
+      content={advice.content}
+      date={advice.date}
+      />
+    )) }
   </main>
   <Footer />
 </Layout>

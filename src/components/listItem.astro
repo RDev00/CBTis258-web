@@ -7,6 +7,6 @@ export interface Props {
 const { text = "", link = "/" } = Astro.props;
 ---
 
-<li class="duration-100 text-white hover:scale-110 hover:text-blue-500 hover:underline text-xl">
-	<a href={link}> {text} </a>
+<li class="duration-100 text-white hover:scale-110 hover:text-blue-500 hover:underline text-base md:text-xl">
+	<a href=`${link}`> {text} </a>
 </li>
