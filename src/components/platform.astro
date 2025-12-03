@@ -1,0 +1,13 @@
+---
+export interface Props {
+  srcImg?: String,
+  link?: String,
+  text?: String
+};
+
+const { srcImg = "", link = "", text = "" } = Astro.props;
+---
+
+<a href={link} class="w-[15rem] duration-200 hover:scale-110">
+  <img src={srcImg} alt={text}>
+</a>

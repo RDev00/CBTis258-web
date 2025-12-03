@@ -6,6 +6,7 @@ import SectionContent from '../components/sectionContent.astro';
 import Subtitle from '../components/subtitle.astro';
 import Text from '../components/text.astro';
 import Card from '../components/card.astro';
+import Platform from '../components/platform.astro';
 ---
 
 <Layout title="Inicio">
@@ -20,7 +21,7 @@ import Card from '../components/card.astro';
 			CENTRO DE BACHILLERATO Industrial y de Servicios No. 258
 		</section>
 
-		<section class="flex flex-col lg:flex-row gap-5 justify-center items-center w-[90%] mb-10">
+		<section class="flex flex-col lg:flex-row gap-5 justify-center items-center w-[90%] mb-20">
 			<div class="flex flex-col h-full">
 				<h1 class="text-3xl md:text-7xl text-[#9D2449] font-bold h-full flex gap-3">
 					<span class="block h-full w-2 bg-[#B38E5D]"></span>
@@ -29,6 +30,7 @@ import Card from '../components/card.astro';
 				<Text>
 				Somos una institución de Nivel Medio Superior técnico, donde los alumnos cursan su bachillerato (preparatoria) y una carrera técnica. Si el egresado decide estudiar la Educación Superior, le permite el acceso a cualquier carrera de licenciatura o ingeniería.
 				</Text>
+				<p class="h-full"></p>
 			</div>
 			<video class="w-[30rem] max-w-[90%] border-4 border-black rounded-md" src="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Cbtis-258-Escobedo-Dgeti.webm" controls="true" controlslist="nodownload" playsinline=""></video>
 		</section>
@@ -58,6 +60,15 @@ import Card from '../components/card.astro';
 				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Drinks-Meal-Table.jpg" text="Preparación de alimentos y bebidas"	/>
 				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Hotel-Service-Photos.jpg" text="Servicio de hospedaje"	/>
 				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Computer-Technician-Photo-by-Elias-Gamez.jpg" text="S.M.E.C"	/>
+			</div>
+		</SectionContent>
+
+		<SectionContent title="Plataformas">
+			<div class="w-full px-3 flex flex-wrap gap-5 py-4 justify-center items-center">
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Edumedia-Tics-logo.webp" text="Edumedia" link="https://www.edumediamanager.com/acceder" />
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Google-Classroom-Logo-copy.png" text="Classroom" link="https://www.classroom.google.com/" />
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Asset-24-1024x240-1.webp" text="Duolingo" link="https://www.duolingo.com/" />
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Moodle-logo.webp" text="Moodle" link="https://moodle.org/" />
 			</div>
 		</SectionContent>
 	</main>

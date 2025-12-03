@@ -1,0 +1,10 @@
+---
+export interface Props {
+  username?: String,
+  title?: String,
+  content?: String,
+  date?: Date
+}
+
+const { username = "", title= "", content = "" } = Astro.props;
+---
