@@ -1,0 +1,22 @@
+---
+export interface Props {
+	title?: string;
+}
+
+const { title = 'Astro App' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <link rel="stylesheet" type="text/css" href="/src/styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="/src/styles/fonts.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CBTis258 - {title} </title>
+</head>
+<body class="min-h-dvh grid grid-rows-[auto_1fr_auto]">
+  <!-- Contenido de la pagina ↓ -->
+  <slot />
+</body>
+</html>

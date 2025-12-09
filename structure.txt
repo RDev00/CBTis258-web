@@ -1,0 +1,14 @@
+Estructura que seguira la seccion de frontend
+
+src <- Seccion de app
+  /layout <- Layout base de una pagina
+  /pages <- Paginas
+  /components <- Componentes reutilizables
+    /forms <- Seccion de componentes de formularios
+  /services <- Requests con la API
+  /functions <- Funciones JavaScript predeterminadas
+
+public <- Seccion de imagenes
+  / <- Seccion de logos
+  /icons <- Seccion de iconos de botones
+  /stock <- Imagene stock para poner en la pagina

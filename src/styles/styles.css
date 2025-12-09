@@ -1,0 +1,42 @@
+@keyframes Updatable {
+	0% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_1.webp) }
+	10% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_2.webp) }
+	15% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_3.webp) }
+	21% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_4.webp) }
+	26% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_5.webp) }
+	31% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_6.webp) }
+	36% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_7.webp) }
+	42% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_8.webp) }
+	52% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_10.webp) }
+	57% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_11.webp) }
+	63% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_12.webp) }
+	68% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_13.webp) }
+	73% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_14.webp) }
+	79% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_15.webp) }
+	84% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_16.webp) }
+	95% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_18.webp) }
+	100% { background-image: url(https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258_19.webp) }
+}
+
+.personalized-background {
+	position: relative;
+}
+.personalized-background::before {
+	filter: brightness(0.6);
+	content: '';
+	display: block;
+	z-index: -1;
+	position: absolute;
+	animation: Updatable 150s ease-in-out infinite;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.video-mockup {
+	z-index: -1;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+}

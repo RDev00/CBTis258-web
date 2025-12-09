@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/layout.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import SectionContent from '../components/sectionContent.astro';
+import Subtitle from '../components/subtitle.astro';
+import Text from '../components/text.astro';
+import Card from '../components/card.astro';
+import Platform from '../components/platform.astro';
+---
+
+<Layout title="Inicio">
+	<Header />
+	<main class="flex flex-col pb-20 justify-center items-center">
+		<section class="flex flex-col justify-center items-center px-2 py-6 gap-5 personalized-background bg-cover bg-center w-full">
+			<img src="https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258-logo.png" alt="logo" class="max-w-[75%]" />
+			<h1 class="text-white text-2xl md:text-5xl text-center font-bold"> UN MOTIVO DE ORGULLO </h1>
+		</section>
+
+		<section class="bg-[#621132] text-white text-center w-full mb-10 text-xl py-3">
+			CENTRO DE BACHILLERATO Industrial y de Servicios No. 258
+		</section>
+
+		<section class="flex flex-col lg:flex-row gap-5 justify-center items-center w-[90%] mb-20">
+			<div class="flex flex-col h-full">
+				<h1 class="text-3xl md:text-7xl text-[#9D2449] font-bold h-full flex gap-3">
+					<span class="block h-full w-2 bg-[#B38E5D]"></span>
+					CBTis258
+				</h1>
+				<Text>
+				Somos una institución de Nivel Medio Superior técnico, donde los alumnos cursan su bachillerato (preparatoria) y una carrera técnica. Si el egresado decide estudiar la Educación Superior, le permite el acceso a cualquier carrera de licenciatura o ingeniería.
+				</Text>
+				<p class="h-full"></p>
+			</div>
+			<video class="w-[30rem] max-w-[90%] border-4 border-black rounded-md" src="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Cbtis-258-Escobedo-Dgeti.webm" controls="true" controlslist="nodownload" playsinline=""></video>
+		</section>
+
+		<SectionContent title="Nosotros" id="nosotros">
+			<Subtitle subtitle="Historia" /> 
+			<Text>
+				El plantel fue construido por el municipio — en su momento — de General Escobedo, Nuevo León, y empezó actividades el 1 de septiembre de 1993. En sus inicios atendía a 486 alumnos. Con el paso del tiempo, esa cifra ha crecido, conforme también se ha ampliado la oferta educativa. Las primeras especialidades incluían Técnico en Turismo, Técnico en Mecánica y Técnico en Computación. Actualmente, su oferta educativa abarca varias carreras técnicas: por ejemplo Contabilidad, Programación, Laboratorio clínico, Mecánica industrial, Preparación de alimentos y bebidas, Servicios de hospedaje, entre otras.
+			</Text>
+
+			<Subtitle subtitle="Mision" /> 
+			<Text>
+				Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de bachilleres y profesionales técnicos, con el fin de contribuir al desarrollo sustentable del país.
+			</Text>
+
+			<Subtitle subtitle="Vision" /> 
+			<Text>
+				Ser una institución de educación media superior certificada, orientada al aprendizaje y desarrollo de conocimientos tecnológicos y humanísticos.
+			</Text>
+
+			<Subtitle subtitle="Valores institucionales" />
+			<Text>
+				Responsabilidad, preparación técnica, desarrollo integral, y una formación orientada al servicio social y al desarrollo sostenible.
+			</Text>
+
+			<Subtitle subtitle="Contacto" /> 
+			<Text>
+				Para más información puedes contactarnos a nuestros medios: <br />
+				<a href="https://www.facebook.com/CBTIS258NL/" class="hover:text-blue-600 hover:underline">Facebook: Cbtis 258 Escobedo Dgeti </a> <br />
+				Numero de telefono: 81-8397-1666 <br />
+				Correo: cbtis258.dir@dgeti.sems.gob.mx <br>
+				Ubicación: Plinio D. Ordonez 801, Col. Hacienda del Topo. Tels: 89010290 y tel escolares 8110945254, General Escobedo, Mexico, 66072 <br>
+				Horario de atencion: 06:00 - 20:30 GMT-6 de Lunes a sabado
+			</Text>
+
+			<Subtitle subtitle="Organigrama" />
+			<img src="/organigrama.svg" alt="Organigrama" class="max-w-[90%] mx-auto" />
+		</SectionContent>
+
+		<SectionContent title="Servicios escolares" id="escolares">
+			<Subtitle subtitle="Inscripción" /> 
+			<Text>
+				La inscripción al CBTis 258 requiere presentar documentación completa como acta de nacimiento, CURP, comprobante de estudios, fotografías y comprobante de domicilio; el aspirante debe acudir en las fechas indicadas para entregar sus datos, registrar su información en control escolar y cubrir la cuota correspondiente en los servicios financieros autorizados. El trámite se realiza de manera presencial y es indispensable entregar documentos legibles y verificados, ya que solo con el expediente completo se confirma oficialmente el ingreso al plantel.
+			</Text>
+
+			<Subtitle subtitle="Reinscripción" /> 
+			<Text>
+				La reinscripción está dirigida a estudiantes que continúan sus estudios y deben entregar su historial académico actualizado, ficha de reinscripción y comprobante de pago del semestre; el procedimiento consiste en actualizar datos personales, validar materias aprobadas y pendientes, y realizar el pago en la institución financiera designada. Es importante cumplir con las fechas establecidas y no tener adeudos académicos o administrativos, de lo contrario el sistema no autoriza la reinscripción.
+			</Text>
+
+			<Subtitle subtitle="Becas" />
+			<Text>
+				Para solicitar becas, el estudiante debe presentar documentos como identificación, CURP, comprobante de estudios, comprobante socioeconómico y llenar la solicitud oficial según la convocatoria vigente; el procedimiento incluye registrar datos en la plataforma correspondiente, entregar documentación en control escolar y esperar la validación socioeconómica. Se recomienda revisar cuidadosamente los requisitos específicos de cada programa y respetar los plazos, ya que la entrega extemporánea invalida la participación.
+			</Text>
+
+			<Subtitle subtitle="Constancias" />
+			<Text>
+				La expedición de constancias requiere que el estudiante o tutor presente una solicitud en control escolar junto con identificación y, en caso necesario, comprobante de pago del servicio; el trámite consiste en verificar los datos académicos del estudiante y generar el documento en los tiempos establecidos por la institución. Es importante solicitarla con anticipación, ya que algunas constancias requieren validaciones internas y no se entregan de inmediato.
+			</Text>
+
+			<Subtitle subtitle="Certificados" />
+			<Text>
+				Para obtener el certificado de estudios, el alumno debe haber concluido el programa académico y presentar acta de nacimiento, CURP, fotografías recientes y cubrir la cuota correspondiente; el procedimiento incluye la revisión final del historial académico, la validación de documentos y la generación del certificado por parte del área administrativa. Como consideración general, el certificado se entrega solo cuando no existan adeudos y toda la documentación esté correcta, por lo que cualquier inconsistencia puede retrasar la emisión.
+			</Text>
+		</SectionContent>
+
+		<SectionContent title="Oferta educativa">
+			<div class="pt-5 flex flex-wrap w-full justify-center items-center gap-10">
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Accounting-Photos-by-Mikhail-Nilov.jpg" text="Contabilidad"	/>
+				<Card sourceImage="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?cs=srgb&dl=pexels-tara-winstead-8386440.jpg&fm=jpg" text="IA"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Industrial-Mechanics-Chevanon.jpg" text="Mecanica Industrial"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Drinks-Meal-Table.jpg" text="Preparación de alimentos y bebidas"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Hotel-Service-Photos.jpg" text="Servicio de hospedaje"	/>
+				<Card sourceImage="https://cbtis258.edu.mx/wp-content/uploads/2024/08/Computer-Technician-Photo-by-Elias-Gamez.jpg" text="S.M.E.C"	/>
+			</div>
+		</SectionContent>
+
+		<SectionContent title="Alumnos">
+			<Subtitle subtitle="Practicas profesionales" />
+			<Text>
+				Las prácticas profesionales requieren que el estudiante cuente con un porcentaje mínimo de créditos aprobados, carta de presentación emitida por el plantel y seguro escolar vigente; el procedimiento consiste en solicitar la carta en el departamento correspondiente, gestionar su aceptación en una empresa autorizada y entregar el plan de actividades para su validación. Es fundamental cumplir con el número de horas establecidas, entregar los reportes parciales y finales en tiempo y forma, y asegurarse de que la empresa esté registrada ante el plantel para que las actividades sean reconocidas oficialmente.
+			</Text>
+			
+			<Subtitle subtitle="Bolsa de trabajo" />
+			<Text>
+				Las prácticas profesionales requieren que el estudiante cuente con un porcentaje mínimo de créditos aprobados, carta de presentación emitida por el plantel y seguro escolar vigente; el procedimiento consiste en solicitar la carta en el departamento correspondiente, gestionar su aceptación en una empresa autorizada y entregar el plan de actividades para su validación. Es fundamental cumplir con el número de horas establecidas, entregar los reportes parciales y finales en tiempo y forma, y asegurarse de que la empresa esté registrada ante el plantel para que las actividades sean reconocidas oficialmente.
+			</Text>
+			
+			<Subtitle subtitle="Relación con empresas" />
+			<Text>
+				Las prácticas profesionales requieren que el estudiante cuente con un porcentaje mínimo de créditos aprobados, carta de presentación emitida por el plantel y seguro escolar vigente; el procedimiento consiste en solicitar la carta en el departamento correspondiente, gestionar su aceptación en una empresa autorizada y entregar el plan de actividades para su validación. Es fundamental cumplir con el número de horas establecidas, entregar los reportes parciales y finales en tiempo y forma, y asegurarse de que la empresa esté registrada ante el plantel para que las actividades sean reconocidas oficialmente.
+			</Text>
+		</SectionContent>
+
+		<SectionContent title="Plataformas">
+			<div class="w-full px-3 flex flex-wrap gap-5 py-4 justify-center items-center">
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Edumedia-Tics-logo.webp" text="Edumedia" link="https://www.edumediamanager.com/acceder" />
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Google-Classroom-Logo-copy.png" text="Classroom" link="https://www.classroom.google.com/" />
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Asset-24-1024x240-1.webp" text="Duolingo" link="https://www.duolingo.com/" />
+				<Platform srcImg="https://cbtis189.edu.mx/wp-content/uploads/2024/08/Moodle-logo.webp" text="Moodle" link="https://moodle.org/" />
+			</div>
+		</SectionContent>
+	</main>
+	<Footer />
+</Layout>

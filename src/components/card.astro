@@ -1,0 +1,15 @@
+---
+export interface Props {
+	text?: String
+	sourceImage?: String
+}
+
+const { text = "", sourceImage = "" } = Astro.props 
+---
+
+<section class="relative w-[20rem] duration-300 hover:scale-110 z-1">
+  <img src={sourceImage} alt={text} class="rounded-md object-cover w-full h-full brightness-[0.6] z-0" />
+  <p class="absolute bottom-1 left-1/2 -translate-x-1/2 text-center text-white font-bold text-xl z-1">
+    {text}
+  </p>
+</section>
