@@ -12,10 +12,12 @@ import Platform from '../components/platform.astro';
 <Layout title="Inicio">
 	<Header />
 	<main class="flex flex-col pb-20 justify-center items-center">
-		<section class="flex flex-col justify-center items-center px-2 py-6 gap-5 personalized-background bg-cover bg-center w-full">
-			<img src="https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258-logo.png" alt="logo" class="max-w-[75%]" />
-			<h1 class="text-white text-2xl md:text-5xl text-center font-bold"> UN MOTIVO DE ORGULLO </h1>
+		<section class="min-h-screen flex flex-col justify-center items-center px-2 py-6 gap-5 bg-cover bg-center w-full relative bg-black/60">
+			<img src="https://cbtis258.edu.mx/wp-content/uploads/2024/08/cbtis258-logo.png" alt="logo" class="max-w-[75%]">
+			<h1 class="text-white text-2xl md:text-5xl text-center font-bold">UN MOTIVO DE ORGULLO</h1>
+			<section class="animate-updatable w-full h-full absolute z-[-1] bg-cover bg-center no-repeat"></section>
 		</section>
+
 
 		<section class="bg-[#621132] text-white text-center w-full mb-10 text-xl py-3">
 			CENTRO DE BACHILLERATO Industrial y de Servicios No. 258
